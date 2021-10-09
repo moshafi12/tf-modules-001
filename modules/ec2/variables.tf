@@ -5,12 +5,12 @@ variable "vpc_id" {
 
 variable "cidr_block" {
 	type = string
-    description = "Subnets"
+    description = "Subnet CIDR block"
 }
 
-variable "ec2_name" {
+variable "webserver_name" {
 	type = string
-    description = "Ec2 Instance Name"
+    description = "Name of the webserver"
 }
 
 variable "ami" {
@@ -20,5 +20,6 @@ variable "ami" {
 
 variable "instance_type" {
 	type    = string
+        description = "Instance type"
 	default = "t2.micro"
 }
